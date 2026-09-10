@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@theme inline {
+
+
+    --font-Inter: "Inter", sans-serif;
+
+    --color-bg-dark: var(--clr-VeryDarkBlue);
+    --color-bg-light: var(--clr-VeryPaleBlue);
+
+
+    --color-LimeGreen: var(--clr-LimeGreen);
+    --color-BrightRed: var(--clr-BrightRed);
+
+
+    --color-Facebook: var(--clr-Facebook);
+    --color-Twitter: var(--clr-Twitter);
+    --color-Instagram: var(--clr-Instagram);
+    --color-YouTube: var(--clr-YouTube);
+
+
+    --background-image-DarkToggle: var(--clr-DarkToggle);
+    --color-LightToggle: var(--clr-LightToggle);
+
+
+    --color-VeryDarkBlue: var(--clr-VeryDarkBlue);
+    --color-VeryDarkBlueTopBG: var(--clr-VeryDarkBlueTopBG);
+    --color-DarkDesatBlue: var(--clr-DarkDesatBlue);
+    --color-DesatBlue: var(--clr-DesatBlue);
+    --color-White: var(--clr-White);
+    
+
+    --color-VeryPaleBlue: var(--clr-VeryPaleBlue);
+    --color-VeryPaleBlue: var(--clr-VeryPaleBlue);
+    --color-VeryPaleBlue: var(--clr-VeryPaleBlue);
+    --color-LightGrayishBlue: var(--clr-LightGrayishBlue);
+    --color-DarkGrayishBlue: var(--clr-DarkGrayishBlue);
+    --color-VeryDarkBlue: var(--clr-VeryDarkBlue);
+
+}
+
+@layer base {
+    :root {
+        /* TOKEN PRIMITIF */
+
+        --clr-LimeGreen: hsl(163, 72%, 41%);
+        --clr-BrightRed: hsl(356, 69%, 56%);
+
+
+        --clr-Facebook: hsl(208, 92%, 53%);
+        --clr-Twitter: hsl(203, 89%, 53%);
+        --clr-Instagram: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+        --clr-YouTube: hsl(348, 97%, 39%);
+
+
+        --clr-DarkToggle: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        --clr-LightToggle: hsl(230, 22%, 74%);
+
+
+        --clr-VeryDarkBlue: hsl(230, 17%, 14%);
+        --clr-VeryDarkBlueTopBG: hsl(232, 19%, 15%);
+        --clr-DarkDesatBlue: hsl(228, 28%, 20%);
+        --clr-DesatBlue: hsl(228, 34%, 66%);
+        --clr-White: hsl(0, 0%, 100%);
+
+
+        --clr-VeryPaleBlue: hsl(225, 100%, 98%);
+        --clr-VeryPaleBlue: hsl(225, 100%, 98%);
+        --clr-VeryPaleBlue: hsl(225, 100%, 98%);
+        --clr-LightGrayishBlue: hsl(227, 47%, 96%);
+        --clr-DarkGrayishBlue: hsl(228, 12%, 44%);
+        --clr-VeryDarkBlue: hsl(230, 17%, 14%);
+    }
+}
+
+.DarkMode {
+    background-color: var(--color-bg-dark);
+    color: var(--color-DesatBlue);
+}
+
+
+
+.LightMode {
+    background-color: var(--color-bg-light);
+    color: var(--color-DarkGrayishBlue);
+
+}
+
+
+/* 
+
+Dark Theme
+Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+Light Theme
+Toggle: hsl(230, 22%, 74%)
+Neutral
+Dark Theme
+Very Dark Blue (BG): hsl(230, 17%, 14%)
+Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+Desaturated Blue (Text): hsl(228, 34%, 66%)
+White (Text): hsl(0, 0%, 100%)
+Light Theme
+White (BG): hsl(0, 0%, 100%)
+Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+Very Dark Blue (Text): hsl(230, 17%, 14%)
+
+
+
+Typography
+Body Copy
+Font size (Overview Card Headings): 14px
+Font
+Family: Inter
+Weights: 400, 700 */
