@@ -1,3 +1,9 @@
+// import iconFacebook from "../assets/images/icon-facebook.svg";
+// import iconTwitter from "../assets/images/icon-twitter.svg";
+// import iconInstagram from "../assets/images/icon-instagram.svg";
+// import iconYoutube from "../assets/images/icon-youtube.svg";
+
+
 const data = {
   PlateformTot: [
     {

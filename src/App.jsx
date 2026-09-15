@@ -26,25 +26,27 @@ function App() {
           <label className="relative inline-flex cursor-pointer items-center">
             <input type="checkbox" checked={IsDark} onChange={handlerToggle} className="peer sr-only" />
             <span className="h-8 w-14 rounded-full bg-LightToggle peer-checked:bg-DarkToggle" />
-            <span className=" absolute left-1 h-6 w-6 rounded-full bg-blue-500 transition-transform peer-checked:translate-x-6" />
+            <span className=" absolute left-1 h-6 w-6 rounded-full bg-white transition-transform peer-checked:translate-x-6" />
           </label>
         </section>
       </header>
 
-      <section className='flex flex-col md:flex-row'>
-        {Data.PlateformTot.map((item, index) => (
-          <li key={index}>
-            <BigCard
-              plateforme={item.plateforme}
-              utilisateur={item.utilisateur}
-              total={item.total}
-              aujourdHui={item.aujourdHui}
-            />
-          </li>
-        ))}
+      <section className='flex flex-row'>
+        <ul>
+          {Data.PlateformTot.map((item, index) => (
+            <li key={index}>
+              <BigCard
+                plateforme={item.plateforme}
+                utilisateur={item.utilisateur}
+                total={item.total}
+                aujourdHui={item.aujourdHui}
+              />
+            </li>
+          ))}
+        </ul>
       </section>
 
-      <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10'>
+      <section className='flex flex-row gap-4 flex-wrap mt-10'>
         <ul>
           {Data.DailyStat.map((item, index) => (
             <li key={index}>
@@ -57,7 +59,6 @@ function App() {
             </li>
           ))}
         </ul>
-
       </section>
     </main>
   );

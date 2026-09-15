@@ -3,8 +3,6 @@
 
 
 @theme inline {
-
-
     --font-Inter: "Inter", sans-serif;
 
     --color-bg-dark: var(--clr-VeryDarkBlue);
@@ -38,7 +36,6 @@
     --color-LightGrayishBlue: var(--clr-LightGrayishBlue);
     --color-DarkGrayishBlue: var(--clr-DarkGrayishBlue);
     --color-VeryDarkBlue: var(--clr-VeryDarkBlue);
-
 }
 
 @layer base {
