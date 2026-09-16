@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <main>
+    <main className="font-Inter bg-White text-DarkGrayishBlue">
       <header className='flex flex-row items-center justify-between gap-20 py-10 px-50'>
         <section className='flex flex-col items-left justify-left gap-2'>
           <h1 className="text-3xl font-bold">Social Media Dashboard</h1>
@@ -31,10 +31,10 @@ function App() {
         </section>
       </header>
 
-      <section className='flex flex-row'>
-        <ul>
+      <section className="">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {Data.PlateformTot.map((item, index) => (
-            <li key={index}>
+            <li key={index} className="w-full">
               <BigCard
                 plateforme={item.plateforme}
                 utilisateur={item.utilisateur}
@@ -46,8 +46,8 @@ function App() {
         </ul>
       </section>
 
-      <section className='flex flex-row gap-4 flex-wrap mt-10'>
-        <ul>
+      <section>
+        <ul className="flex flex-row gap-4 flex-wrap mt-10">
           {Data.DailyStat.map((item, index) => (
             <li key={index}>
               <SmCard
